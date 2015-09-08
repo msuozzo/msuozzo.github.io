@@ -10,31 +10,36 @@
     </head>
     <body>
         <div id="container">
-            <div id="header">
+            <header>
                 <h1>Matthew Suozzo</h1>
                 <h3>Software Engineer</h3>
-            </div>
-            <div id="nav">
-                <table class="links"><tr>
-                    <td class="current"><a href="/index.html">Home</a></td>
-                    <td><a href="/bio.html">Bio</a></td>
+            </header>
+            <nav>
+                <table class="links">
+                <tr>
+                    {% if page.title == 'Home' %}
+                    <td class="current">
+                    {% else %}
+                    <td>
+                    {% endif %}
+                        <a href="/">Home</a></td>
+                    {% if page.title == 'Bio' %}
+                    <td class="current">
+                    {% else %}
+                    <td>
+                    {% endif %}
+                        <a href="/bio.html">Bio</a></td>
                     <td><a href="/pdf/Matthew_Suozzo_Resume.pdf">Resume</a></td>
                     <td><a href="https://github.com/msuozzo">GitHub</a></td>
-                    <td><a href="http://www.linkedin.com/in/matthewsuozzo/">LinkedIn</a></td>
-                </tr></table>
-            </div>
+                    <td><a href="https://www.linkedin.com/in/matthewsuozzo/">LinkedIn</a></td>
+                </tr>
+                </table>
+            </nav>
             <div id="content">
                 {{ content }}
             </div>
             <footer>
-            <div id="news">
-                <h5>Recent News:</h5>
-
-                <p>This past summer, I co-authored a paper on the static detection of hardware backdoors.
-                 It will appear at the 20th ACM Conference on Computer and Communications Security in Berlin, Germany.
-                 A preprint is available <a class="inline" href="http://www.cs.columbia.edu/~simha/preprint_ccs13.pdf">here</a>.
-                </p>
-            </div>
+                {% include news.html %}
             </footer>
 
         </div>

@@ -1,0 +1,10 @@
+- name: ccs-admission
+  expires:
+      date: 2013-11-11
+  published:
+      date: 2013-08-28
+  content: >
+      This past summer, I co-authored a paper on the static detection of
+      hardware backdoors. It will appear at the 20th ACM Conference on
+      Computer and Communications Security in Berlin, Germany. A preprint is
+      available [here](http://www.cs.columbia.edu/~simha/preprint_ccs13.pdf).

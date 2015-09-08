@@ -39,15 +39,11 @@ a.inline:visited {
 	}
 a.inline:hover {
 	color: #515151;
-	text-decoration: underline;;
+	text-decoration: underline;
 }
 div {
 	background-color:white;
 	text-align:center;
-	/* border-style:solid;
-	border-width:2px;
-	padding:5px; 
-	background-color:#eee; */
 }
 div#container {
 	width:525px;
@@ -56,12 +52,16 @@ div#container {
 div#content {
 	padding-left:5px;
 }
-div#nav {
+nav {
 	padding:0px;
 }
-div#news {
+footer {
 	padding:0px;
 	text-align:left;
+}
+footer a {
+	font-size: 11pt;
+	font-variant: normal;
 }
 p {
 	color: black;

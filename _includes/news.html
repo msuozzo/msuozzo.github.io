@@ -1,0 +1,11 @@
+{% if true %}
+<div id="news">
+    <h5>Recent News:</h5>
+
+    {% for news_item in site.data.news %}
+    <div class="news-item">
+        {{ news_item.content | markdownify }}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
