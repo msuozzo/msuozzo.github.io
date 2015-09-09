@@ -2,10 +2,18 @@
 <div id="news">
     <h5>Recent News:</h5>
 
-    {% for news_item in site.data.news %}
-    <div class="news-item">
-        {{ news_item.content | markdownify }}
-    </div>
-    {% endfor %}
+    <table>
+        {% assign sorted_news = site.data.news | sort: "published" %}
+        {% for news_item in sorted_news %}
+        <tr class="news-item">
+            <td class="date">
+                {{ news_item.published | date: "%F" }}
+            </td>
+            <td class="news-content">
+                {{ news_item.content | markdownify }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
 </div>
 {% endif %}
