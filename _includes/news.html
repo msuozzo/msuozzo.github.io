@@ -1,18 +1,23 @@
-{% if true %}
+{% assign latest = site.data.news | map: "expires" | sort | last | date: "%F" %}
+{% assign today = "now" | date: "%F" %}
+{% if today < latest %}
 <div id="news">
     <h5>Recent News:</h5>
 
     <table>
         {% assign sorted_news = site.data.news | sort: "published" %}
         {% for news_item in sorted_news %}
-        <tr class="news-item">
-            <td class="date">
-                {{ news_item.published | date: "%F" }}
-            </td>
-            <td class="news-content">
-                {{ news_item.content | markdownify }}
-            </td>
-        </tr>
+            {% assign expires = news_item.expires | date: "%F" %}
+            {% if today < expires %}
+            <tr class="news-item">
+                <td class="date">
+                    {{ news_item.published | date: "%F" }}
+                </td>
+                <td class="news-content">
+                    {{ news_item.content | markdownify }}
+                </td>
+            </tr>
+            {% endif %}
         {% endfor %}
     </table>
 </div>
