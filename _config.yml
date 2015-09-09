@@ -1,2 +1,4 @@
 name: Matthew Suozzo
 markdown: kramdown
+gems:
+    - jekyll-sitemap
