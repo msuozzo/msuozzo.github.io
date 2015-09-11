@@ -4,7 +4,7 @@
 <div id="news">
     <h5>Recent News:</h5>
 
-    <table>
+    <table class="min-width">
         {% assign sorted_news = site.data.news | sort: "published" %}
         {% for news_item in sorted_news %}
             {% assign expires = news_item.expires | date: "%F" %}

@@ -128,9 +128,6 @@ table {
 table td {
     vertical-align: top;
 }
-table.middle {
-    width: 100%;
-}
 table.middle td {
     text-align: left;
     margin: 9%;
@@ -167,16 +164,14 @@ ul {
 li {
     font-size: 10pt;
 }
-div#news {
-    padding-left: 5px;
-}
-div#news table {
+table.min-width {
     width: auto;
 }
 tr.news-item {
     padding-bottom: 5px;
 }
 tr.news-item td {
+    padding-left: 5px;
 }
 tr.news-item td.date {
     text-align: left;
@@ -186,4 +181,14 @@ tr.news-item td.date {
 tr.news-item td.news-content p {
     font-size: 10pt;
     margin-top: 0px;
+}
+tr.post {
+    padding-bottom: 5px;
+    font-size: 12pt;
+}
+tr.post td {
+    padding-left: 5px;
+}
+tr.post td.post-link a {
+    font-size: 11pt;
 }

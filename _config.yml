@@ -2,3 +2,4 @@ name: Matthew Suozzo
 markdown: kramdown
 gems:
     - jekyll-sitemap
+permalink: /blog/:year/:month/:day/:title

@@ -1,0 +1,15 @@
+---
+layout: default
+title: Blog
+---
+<h4>Posts</h4>
+<table class="min-width">
+    {% for post in site.posts %}
+    <tr class="post">
+        <td class="date">{{ post.date | date: "%F" }}</td>
+        <td class="post-link">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
