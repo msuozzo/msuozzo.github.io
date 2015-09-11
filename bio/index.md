@@ -4,21 +4,20 @@ title: Bio
 ---
 ####Bio
 
-I am an undergraduate at Columbia University School of Engineering and Applied
-Science majoring in Computer Science. For more than two years, I have worked as
-a research assistant to doctoral candidate Adam Waksman under Professor Simha
-Sethumadhavan in the Computer Architecture and Security Technologies Lab.
-During this time, I co-authored "FANCI: Identification of Stealthy Malicious
-Logic Using Boolean Functional Analysis," a paper presented at ACM CCS 2013.
+I am a NYC-based software engineer interested in systems and software security.
 
-In the summer of 2012, I worked for Knewton, an Education-Tech Startup in New
-York City. I helped roll out new features to their Python back end
-infrastructure and contributed to a number of Open-Source projects used at the
-company.
+I graduated from Columbia University School of Engineering and Applied Science
+(Class of '15) with a BS in Computer Science.
 
-My language background is heavily rooted in Python and Java but I am competent
-with a C compiler and Makefile or a Shell script.
+At Columbia, I worked as a research assistant to doctoral candidate Adam
+Waksman and Professor Simha Sethumadhavan in the Computer Architecture and
+Security Technologies Lab. With this group, I co-authored "FANCI:
+Identification of Stealthy Malicious Logic Using Boolean Functional Analysis,"
+a paper presented at ACM CCS 2013. This work led to the formation of ChipScan
+LLC where I held the title of Lead Engineer from 2014 to 2015.
 
-I grew up in Manhattan and graduated from Hunter College High School in June
-2011. In my spare time, I play college and club Ultimate Frisbee, read about
-consumer technology, go to concerts, and build desktop PCs.
+My language background is heavily rooted in Python with significant experience
+in C, C++, and Java.
+
+In my spare time, I play Ultimate Frisbee, read about consumer technology, and
+travel.
